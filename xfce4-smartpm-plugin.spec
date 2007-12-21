@@ -13,6 +13,7 @@ BuildRequires:	perl(XML::Parser)
 BuildRequires:	intltool
 Requires:	smart-gui
 Obsoletes:	xfce-smartpm-plugin
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 A Xfce panel plugin for Smart Package Manager.
