@@ -1,11 +1,12 @@
 Summary: 	A Smart plugin for the Xfce panel
 Name: 		xfce4-smartpm-plugin
 Version: 	0.4.0
-Release: 	%mkrel 6
+Release: 	%mkrel 7
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-smartpm-plugin
 Source0: 	http://goodies.xfce.org/releases/xfce4-smartpm-plugin/%{name}-%{version}.tar.bz2
+Patch0:		xfce4-smartpm-plugin-0.4.0-libnotify-0.7.patch
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel >= 4.4.2
@@ -24,6 +25,7 @@ A Xfce panel plugin for Smart Package Manager.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 export GKSU="/usr/bin/ktsuss"
