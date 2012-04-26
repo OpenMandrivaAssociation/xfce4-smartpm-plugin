@@ -13,8 +13,8 @@ BuildRequires:	libxfcegui4-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	intltool
 BuildRequires:	libnotify-devel
-BuildRequires:	ktsuss
-Requires:	ktsuss
+BuildRequires:	gksu
+Requires:	gksu
 Requires:	smart-gui
 Obsoletes:	xfce-smartpm-plugin
 Obsoletes:	xfce-smart-plugin
@@ -28,8 +28,8 @@ A Xfce panel plugin for Smart Package Manager.
 %patch0 -p0
 
 %build
-export GKSU="/usr/bin/ktsuss"
-export GKSUDO="/usr/bin/ktsuss"
+export GKSU="/usr/bin/gksu"
+export GKSUDO="/usr/bin/gksudo"
 export SU="/bin/su"
 export SUDO="/usr/bin/sudo"
 
