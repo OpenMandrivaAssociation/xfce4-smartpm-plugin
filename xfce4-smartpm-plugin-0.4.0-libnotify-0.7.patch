@@ -1,0 +1,11 @@
+--- src/xfcesmart.c.libnotify	2011-04-19 16:52:27.254602680 +0200
++++ src/xfcesmart.c	2011-04-19 16:53:18.884599913 +0200
+@@ -850,7 +850,7 @@
+       if (xfce_screen_position_is_right(position)) x -= size.width/2;
+     }
+ 
+-    n = notify_notification_new (summary, message, NULL, NULL);
++    n = notify_notification_new (summary, message, NULL);
+     
+     notify_notification_add_action (n,
+       "default", "default",
