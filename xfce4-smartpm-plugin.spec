@@ -9,10 +9,10 @@ Source0: 	http://goodies.xfce.org/releases/xfce4-smartpm-plugin/%{name}-%{versio
 Patch0:		xfce4-smartpm-plugin-0.4.0-libnotify-0.7.patch
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
-BuildRequires:	libxfcegui4-devel >= 4.4.2
+BuildRequires:	pkgconfig(libxfcegui4-1.0) >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	intltool
-BuildRequires:	libnotify-devel
+BuildRequires:	pkgconfig(libnotify)
 BuildRequires:	gksu
 Requires:	gksu
 Requires:	smart-gui
