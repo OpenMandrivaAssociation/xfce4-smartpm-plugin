@@ -1,7 +1,7 @@
 Summary: 	A Smart plugin for the Xfce panel
 Name: 		xfce4-smartpm-plugin
 Version: 	0.4.0
-Release: 	13
+Release: 	14
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-smartpm-plugin
