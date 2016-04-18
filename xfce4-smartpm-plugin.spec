@@ -1,14 +1,14 @@
 Summary: 	A Smart plugin for the Xfce panel
 Name: 		xfce4-smartpm-plugin
 Version: 	0.4.0
-Release: 	14
+Release: 	14.1
 License:	GPLv2+
 Group: 		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-smartpm-plugin
 Source0: 	http://goodies.xfce.org/releases/xfce4-smartpm-plugin/%{name}-%{version}.tar.bz2
 Patch0:		xfce4-smartpm-plugin-0.4.0-libnotify-0.7.patch
 Requires:	xfce4-panel >= 4.4.2
-BuildRequires:	pkgconfig(xfce4panel-1.0)
+BuildRequires:	pkgconfig(libxfce4panel-1.0)
 BuildRequires:	pkgconfig(libxfcegui4-1.0) >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	intltool
@@ -43,7 +43,7 @@ export SUDO="/usr/bin/sudo"
 
 %files -f %{name}.lang
 %doc ChangeLog AUTHORS README
-%{_libdir}/xfce4/panel-plugins/*
+%{_libexecdir}/xfce4/panel-plugins/*
 %{_datadir}/xfce4/panel-plugins/xfce4-smart.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_iconsdir}/hicolor/scalable/apps/*.svg
