@@ -8,6 +8,11 @@ URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-smartpm-plugin
 Source0: 	http://goodies.xfce.org/releases/xfce4-smartpm-plugin/%{name}-%{version}.tar.bz2
 Patch0:		xfce4-smartpm-plugin-0.4.0-libnotify-0.7.patch
 Requires:	xfce4-panel >= 4.4.2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libxfce4panel-1.0)
 BuildRequires:	pkgconfig(libxfcegui4-1.0) >= 4.4.2
 BuildRequires:	perl(XML::Parser)
